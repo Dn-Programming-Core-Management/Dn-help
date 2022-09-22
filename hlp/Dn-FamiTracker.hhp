@@ -68,6 +68,8 @@ sunsoft.htm
 config_version.htm
 config_gui.htm
 config_emulation.htm
+menu_pattern.htm
+menu_song.htm
 
 [ALIAS]
 CHANGE_LOG						= changelog.htm

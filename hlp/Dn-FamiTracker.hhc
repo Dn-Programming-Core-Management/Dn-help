@@ -74,6 +74,14 @@
 				<param name="Local" value="menu_edit.htm">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pattern">
+				<param name="Local" value="menu_pattern.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Song">
+				<param name="Local" value="menu_song.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Module">
 				<param name="Local" value="menu_module.htm">
 				</OBJECT>
