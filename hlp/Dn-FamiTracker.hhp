@@ -65,6 +65,9 @@ img\Icon.png
 style.css
 gpl.txt
 sunsoft.htm
+config_version.htm
+config_gui.htm
+config_emulation.htm
 
 [ALIAS]
 CHANGE_LOG						= changelog.htm
