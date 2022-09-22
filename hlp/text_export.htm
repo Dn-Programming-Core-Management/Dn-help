@@ -9,9 +9,9 @@
 <span class="topic">Text import and export</span><hr>
 
 <p class="text">
-    This feature creates a text equivalent of an FTM file.
+    This feature creates a text equivalent of a module file.
     It is intended to facilitate the creation of automated tools for
-    reading or creating Famitracker data.
+    reading or creating Dn-Famitracker data.
 </p>
 
 <p class="text">
@@ -25,7 +25,7 @@
 <p class="text">
     The format is not case-sensitive.
     Future versions may not be backwards compatible;
-    save as FTM instead if this is needed.
+    save as a module instead if this is needed.
 </p>
 
 <p class="heading">Commands</p>
@@ -320,7 +320,7 @@
             were editing a frame where all pattern indices are the same
             (e.g. ORDER 00 : 00 00 00 00 00).<br />
             The first field represents the note, the first character a letter (C,D,E,F,G,A,B)
-            then 
+            then
             <li><i>row</i>: hex[00,7F] - index of pattern</li>
             <li><i>c0...</i>: channel data for each channel.
                 The channel data looks like: <tt>nnn ii v eee</tt>
