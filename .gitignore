@@ -1,1 +1,3 @@
 *.chm
+
+/hlp/HTMLDefines.h
