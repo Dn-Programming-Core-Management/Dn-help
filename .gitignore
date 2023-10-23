@@ -1,3 +1,5 @@
 *.chm
 
 /hlp/HTMLDefines.h
+/hlp/x64
+/hlp/Win32
