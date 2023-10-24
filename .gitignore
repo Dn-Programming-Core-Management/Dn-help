@@ -1,5 +1,8 @@
 *.chm
-
+# ignore Dn-FT generated files
 /hlp/HTMLDefines.h
 /hlp/x64
 /hlp/Win32
+
+# created by Dn-FT on compile time
+/hlp/changelog.htm
