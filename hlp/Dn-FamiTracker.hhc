@@ -103,6 +103,27 @@
 				</OBJECT>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Module settings">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Module properties">
+				<param name="Local" value="properties.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Detune settings">
+				<param name="Local" value="detune_settings.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Groove settings">
+				<param name="Local" value="groove_settings.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Bookmark Manager">
+				<param name="Local" value="bookmark_manager.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Pattern editor">
 			<param name="Local" value="pattern_editor.htm">
 			</OBJECT>
@@ -117,10 +138,6 @@
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Key commands">
 			<param name="Local" value="shortcuts.htm">
-			</OBJECT>
-		<LI> <OBJECT type="text/sitemap">
-			<param name="Name" value="Module properties">
-			<param name="Local" value="properties.htm">
 			</OBJECT>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="NSF exporting">
