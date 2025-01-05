@@ -6,15 +6,6 @@ As such it is best to consider this repository a "development" build of the help
 
 ## Goals
 
-These goals are for what should be finished in the Help File for the next full Dn-FamiTracker release:
-
-- [x] Complete Sunsoft 5B documentation (almost done)
-- [x] Add Command Line argument documentation
-- [x] Clean up/correct documentation for other sound chips (2A03, MMC5, etc.)
-- [x] Update the FAQ to include newer Dn-Famitracker features
-- [x] Update some screenshots and images to better reflect Dn-Famitracker's interface.
-- [x] Add "versions" to the Help file, to keep track of revisions made to the project files. (This will be done for the next Dn-FamiTracker release.)
-
 #### Future roadmap
 
 - Recode the entire help file from scratch
@@ -27,7 +18,6 @@ These goals are for what should be finished in the Help File for the next full D
 ## Contributing
 
 All contributions are welcome, feel free to submit pull requests, or submit suggestions/code bugs/improvements in the issue tracker. Alternatively, contact a Dn-FamiTracker contributor in the Famitracker.org Discord Server.
-
 
 ## License
 
