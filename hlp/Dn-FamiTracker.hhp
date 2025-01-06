@@ -70,12 +70,16 @@ config_gui.htm
 config_emulation.htm
 menu_pattern.htm
 menu_song.htm
+groove_settings.htm
+detune_settings.htm
+bookmark_manager.htm
 
 [ALIAS]
 CHANGE_LOG						= changelog.htm
 DPCM_IMPORT						= dpcm_import.htm
 EFFECTS							= effect_list.htm
 HIDD_ABOUTBOX					= main_index.htm
+HIDD_BOOKMARKS=bookmark_manager.htm
 HIDD_COMMAND_LINE				= command_line.htm
 HIDD_COMMENTS					= comments.htm
 HIDD_CONFIG_APPEARANCE			= config_appearance.htm
@@ -88,7 +92,9 @@ HIDD_CONFIG_SHORTCUTS			= config_shortcuts.htm
 HIDD_CONFIG_SOUND				= config_sound.htm
 HIDD_CONFIG_VERSION=config_version.htm
 HIDD_CREATEWAV					= export_wave.htm
+HIDD_DETUNE=detune_settings.htm
 HIDD_EXPORT						= nsf_export.htm
+HIDD_GROOVE=groove_settings.htm
 HIDD_INSTRUMENT_DPCM			= 2a03.htm
 HIDD_INSTRUMENT_FDS				= fds.htm
 HIDD_INSTRUMENT_FDS_ENVELOPE	= fds.htm

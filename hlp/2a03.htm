@@ -211,15 +211,23 @@
         The &quot;<b>&lt;-</b>&quot;-button can also be used to assign samples, and &quot;<b>-&gt;</b>&quot;-button to remove assigned
         samples.</p>
 
+    <p class="bold"><a name="DPCMLoop">Loop</a></p>
+
     <p class="text">
         The loop setting will enable the DPCM loop mode, where the entire sample is
         looped from start to end.</p>
+
+    <p class="bold"><a name="DPCMDelta">Delta counter</a></p>
+
     <p class="text">
         The D-counter (delta counter) setting is used to force the delta counter to an initial value before the
         sample is played (equivalent to a Zxx-command in the pattern). Set it to Off to start playing the sample without resetting
         the delta counter.</p>
+
+    <p class="bold"><a name="DPCMSamplerate">Pitch</a></p>
+
     <p class="text">
-        The pitch setting translates to a frequency according to the
+        The pitch setting translates to a playback samplerate according to the
         following table (using the tracker's NTSC and PAL clock frequency of 1.789773 MHz and 1.662607 MHz respectively):</p>
 
     <table class="default" border="1" cellpadding="3px" style="width: 130px">
@@ -311,10 +319,6 @@
     </table>
 
     <p class="text"><a href="https://www.nesdev.org/wiki/APU_DMC#Pitch_table">Reference.</a></p>
-
-    <p class="text">
-        This is equivalent to the quality setting when converting WAV files to DPCM
-        samples.</p>
 
     <table class="noteFrame" cellpadding="5px">
         <tr>

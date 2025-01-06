@@ -390,6 +390,9 @@ echo.</Command>
     <None Include="2a03.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
+    <None Include="bookmark_manager.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
     <None Include="changelog.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
@@ -432,6 +435,9 @@ echo.</Command>
     <None Include="control_panel.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
+    <None Include="detune_settings.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
     <None Include="Dn-FamiTracker.hhc" />
     <None Include="Dn-FamiTracker.hhk" />
     <None Include="dpcm_editor.htm">
@@ -450,6 +456,9 @@ echo.</Command>
       <DeploymentContent>true</DeploymentContent>
     </None>
     <None Include="fds.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="groove_settings.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
     <None Include="instruments.htm">
@@ -539,22 +548,54 @@ echo.</Command>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="img\comments.png" />
-    <Image Include="img\dpcm_editor.PNG" />
+    <Image Include="img\bookmark_manager.png" />
+    <Image Include="img\chip_2A03.png" />
+    <Image Include="img\chip_FDS.png" />
+    <Image Include="img\chip_MMC5.PNG" />
+    <Image Include="img\chip_N163.png" />
+    <Image Include="img\chip_S5B.png" />
+    <Image Include="img\chip_VRC6.PNG" />
+    <Image Include="img\chip_VRC7.png" />
+    <Image Include="img\detune_settings.png" />
+    <Image Include="img\device_mix_offset.png" />
+    <Image Include="img\dpcm_editor.png" />
     <Image Include="img\dpcm_import.png" />
+    <Image Include="img\expansion_sound.png" />
     <Image Include="img\export_wav.png" />
     <Image Include="img\fds_fm_table.PNG" />
     <Image Include="img\frame_editor.png" />
+    <Image Include="img\groove_settings.png" />
     <Image Include="img\Icon.png" />
+    <Image Include="img\import_file.png" />
     <Image Include="img\inst_2a03.png" />
-    <Image Include="img\inst_dpcm.PNG" />
-    <Image Include="img\inst_fds.PNG" />
+    <Image Include="img\inst_dpcm.png" />
+    <Image Include="img\inst_fds.png" />
     <Image Include="img\inst_n163.png" />
-    <Image Include="img\inst_vrc7.PNG" />
+    <Image Include="img\inst_sun5.png" />
+    <Image Include="img\inst_sun5_nmode.png" />
+    <Image Include="img\inst_vrc7.png" />
+    <Image Include="img\module_comments.png" />
+    <Image Include="img\opll_settings.png" />
     <Image Include="img\pattern.png" />
-    <Image Include="img\properties.PNG" />
+    <Image Include="img\pcm_import.png" />
+    <Image Include="img\pitch_mode.png" />
+    <Image Include="img\properties.png" />
+    <Image Include="img\s5b_env_0-3,_9.png" />
+    <Image Include="img\s5b_env_4-7,_f.png" />
+    <Image Include="img\s5b_env_8.png" />
+    <Image Include="img\s5b_env_a.png" />
+    <Image Include="img\s5b_env_b.png" />
+    <Image Include="img\s5b_env_c.png" />
+    <Image Include="img\s5b_env_d.png" />
+    <Image Include="img\s5b_env_e.png" />
+    <Image Include="img\song_and_edit_settings.png" />
+    <Image Include="img\song_and_edit_settings_modified.png" />
+    <Image Include="img\song_editor.png" />
+    <Image Include="img\song_information_and_instrument_list.png" />
     <Image Include="img\toolbar1.png" />
     <Image Include="img\toolbar2.png" />
+    <Image Include="img\vibrato.png" />
+    <Image Include="img\wave_export.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

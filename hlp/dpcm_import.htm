@@ -1,12 +1,12 @@
 <HTML>
-	<HEAD>
-		<TITLE></TITLE>
-		<META NAME="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+    <HEAD>
+        <TITLE></TITLE>
+        <META NAME="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
         <link href="style.css" rel="stylesheet" type="text/css" />
-	</HEAD>
-	<BODY>
+    </HEAD>
+    <BODY>
         <span class="topic">Importing DPCM samples</span>
-		<hr>
+        <hr>
         
         <p class="text">
             This feature is used to convert Microsoft wave files (.wav) to 1-bit DPCM samples, 
@@ -14,6 +14,10 @@
             The format of the wave files must be PCM, no compressed formats are supported.
             Sample rate, sample size and channel count doesn&#39;t matter, the file will be 
             resampled according to the quality setting.<br /></p>
+
+    <p class="text">
+        <img id="IMG1" style="FONT-SIZE: 10pt" src="img/pcm_import.png"
+        alt="Screenshot of PCM import dialog"></p>
         
         <p class="text">
             Choose import in 
@@ -23,9 +27,11 @@
             
         <ul class="text">
             <li><b>Quality</b><br />
-                Sets the sample rate for the converted sample, this is equivalent to the pitch setting in the instrument editor. Use the same setting to play the 
-                sample at original pitch. Quality of 15 gives 
-				best result but also shortest sample time.<br /><br />
+                Sets the <a href="2a03.htm#DPCMSamplerate">sample rate</a> for 
+                the converted sample, this is equivalent to the pitch setting 
+                in the instrument editor. Use the same setting to play the 
+                sample at original pitch. Quality of 15 gives the best result 
+                at the cost of shortest sample time.<br /><br />
             </li>
             <li><b>Gain</b><br />
                 Sets the conversion volume level. Range: -12dB to +12dB.
@@ -34,11 +40,13 @@
         
         <p class="text">
             Maximum supported size of one DPCM sample
-            is 4 kB, at quality 15 (33 kHz) it's a little 
-            less than one second and lowest quality (4 kHz) about eight seconds.</p>
+            is 4 kB (4081 bytes). At rate 15 (33.14394 kHz NTSC / 33.2521 kHz 
+            PAL), the play length is a little less than a second, while the 
+            lowest rate 0 (4.18171 kHz NTSC / 4.17740 kHz PAL) lasts about eight 
+            seconds.</p>
         
     <hr />
     <span class="footer">Back to <a href="interface.htm">interface</a> &middot; <a href="main_index.htm">main index</a></span>
         
-	</BODY>
+    </BODY>
 </HTML>

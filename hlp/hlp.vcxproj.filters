@@ -207,6 +207,15 @@
     <None Include="sound.htm">
       <Filter>HTML Help Topics\Interface\Dialogs</Filter>
     </None>
+    <None Include="bookmark_manager.htm">
+      <Filter>HTML Help Topics\Interface</Filter>
+    </None>
+    <None Include="detune_settings.htm">
+      <Filter>HTML Help Topics\Interface</Filter>
+    </None>
+    <None Include="groove_settings.htm">
+      <Filter>HTML Help Topics\Interface</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="Dn-FamiTracker.hhp">
@@ -214,13 +223,43 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="img\comments.png">
+    <Image Include="img\bookmark_manager.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
-    <Image Include="img\dpcm_editor.PNG">
+    <Image Include="img\chip_2A03.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\chip_FDS.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\chip_MMC5.PNG">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\chip_N163.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\chip_S5B.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\chip_VRC6.PNG">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\chip_VRC7.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\detune_settings.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\device_mix_offset.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\dpcm_editor.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
     <Image Include="img\dpcm_import.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\expansion_sound.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
     <Image Include="img\export_wav.png">
@@ -232,34 +271,100 @@
     <Image Include="img\frame_editor.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
+    <Image Include="img\groove_settings.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
     <Image Include="img\Icon.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\import_file.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
     <Image Include="img\inst_2a03.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
-    <Image Include="img\inst_dpcm.PNG">
+    <Image Include="img\inst_dpcm.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
-    <Image Include="img\inst_fds.PNG">
+    <Image Include="img\inst_fds.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
     <Image Include="img\inst_n163.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
-    <Image Include="img\inst_vrc7.PNG">
+    <Image Include="img\inst_sun5.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\inst_sun5_nmode.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\inst_vrc7.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\module_comments.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\opll_settings.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
     <Image Include="img\pattern.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
-    <Image Include="img\properties.PNG">
+    <Image Include="img\pcm_import.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\pitch_mode.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\properties.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\s5b_env_0-3,_9.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\s5b_env_4-7,_f.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\s5b_env_8.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\s5b_env_a.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\s5b_env_b.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\s5b_env_c.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\s5b_env_d.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\s5b_env_e.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\song_and_edit_settings.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\song_and_edit_settings_modified.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\song_editor.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\song_information_and_instrument_list.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
     <Image Include="img\toolbar1.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
     <Image Include="img\toolbar2.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\vibrato.png">
+      <Filter>HTML Help Topics\Images</Filter>
+    </Image>
+    <Image Include="img\wave_export.png">
       <Filter>HTML Help Topics\Images</Filter>
     </Image>
   </ItemGroup>
