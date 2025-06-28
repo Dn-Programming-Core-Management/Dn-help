@@ -74,6 +74,7 @@
         <li><a href="#Volume2A03EnvelopeToggle">EEx - 2A03 hardware envelope/length counter toggle</a></li>
         <li><a href="#Volume2A03LengthCounter">Exx - 2A03 hardware length counter</a></li>
         <li><a href="#Volume2A03TriLinearCounter">Sxx - Triangle linear counter reset</a></li>
+        <li><a href="#Volume2A03TriLinearCounterRetrigger">Xxx - Triangle linear counter retrigger</a></li>
         <li><a href="#VolumeFDSEnvelopeAttack">Exx - FDS hardware attack envelope</a></li>
         <li><a href="#VolumeFDSEnvelopeDecay">Exx - FDS hardware decay envelope</a></li>
         <li><a href="#VolumeFDSEnvelopedisable">EE0 - FDS hardware envelope disable</a></li>
@@ -177,7 +178,8 @@
 
     <a name="Harmonic" class="boldText">Kxx - Frequency multiplier</a><br />
     <p class="text">
-    Multiply the note pitch by integer <b>xx</b>.
+    Multiply the note pitch by integer <b>xx</b>.<br />
+    This does not affect <a href="#ModulationSpeedAuto">Ixy Auto FDS modulation</a>.
         <br />
         <br />
         <i><b>Warning</b>: This effect is not available for certain channels.</i></p></p>
@@ -230,16 +232,7 @@
         <li>On 2A03 noise, it can be used to select between long (93 step) and short (31 step) LSFR sequence length.</li>
         <li>On N163, it can be used to select the wave index.</li>
         <li>On VRC7, it can be used to select the patch index.</li>
-        <li>On S5B, it can be used to select the channel mode bitmask.</li>
-    </ul>
-    <p class="text">Valid values are:</p>
-    <ul class="text">
-        <li>2A03/MMC5 pulse channels: <b>00 - 03</b></li>
-        <li>2A03 Noise channel: <b>00 - 01</b></li>
-        <li>VRC6 pulse channels: <b>00 - 07</b></li>
-        <li>VRC7 channels: <b>00 - 0F</b></li>
-        <li>N163 channels: <b>00 - 3F</b></li>
-        <li>S5B channels: <b>00 - 07</b></li>
+        <li>On S5B, it can be used to select the channel mode bitmask:</li>
         <br />
         <table class="default" border="1" cellpadding="3px" border="1" style="width: 520px">
             <tr>
@@ -266,6 +259,15 @@
             </tr>
         </table>
     </ul>
+    <p class="text">Valid values are:</p>
+    <ul class="text">
+        <li>2A03/MMC5 pulse channels: <b>00 - 03</b></li>
+        <li>2A03 Noise channel: <b>00 - 01</b></li>
+        <li>VRC6 pulse channels: <b>00 - 07</b></li>
+        <li>VRC7 channels: <b>00 - 0F</b></li>
+        <li>N163 channels: <b>00 - 3F</b></li>
+        <li>S5B channels: <b>00 - 07</b></li>
+    </ul>
     <br />
 
     <hr />
@@ -278,7 +280,8 @@
     <br />
 
     <a name="DpcmRetrigger" class="boldText">Xxx - Retrigger</a><br />
-    <p class="text">Retriggers the DPCM sample with the duration of <b>xx</b> ticks.</p>
+    <p class="text">Retriggers the DPCM sample with the duration of <b>xx</b> ticks.<br />
+    Only active on the row where it is declared.</p>
     <br />
 
     <a name="DpcmOffset" class="boldText">Yxx - Sample offset</a><br />
@@ -431,6 +434,12 @@
     <a name="Volume2A03TriLinearCounter" class="boldText">Sxx - Triangle linear counter reset</a><br />
     <p class="text">Resets the linear counter on the triangle channel to <b>(xx - 80)</b>.<br />
     If <b>xx</b> is less than <b>80</b>, this effect disables the linear counter and the length counter, which then will behave as delayed note cut.</p>
+    <br />
+
+    <a name="Volume2A03TriLinearCounterRetrigger" class="boldText">Xxx - Triangle linear counter retrigger</a><br />
+    <p class="text">Writes the linear counter with a value of <b>xx</b> on every tick.<br />
+    If <b>xx</b> is <b>00</b>, this effect turns off.<br />
+    Valid range: <b>00 - 7F</b>.</p>
     <br />
 
     <a name="VolumeFDSEnvelopeAttack" class="boldText">Exx - FDS hardware attack envelope</a><br />
