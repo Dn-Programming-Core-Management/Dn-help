@@ -221,6 +221,7 @@
     <CustomBuild Include="Dn-FamiTracker.hhp">
       <Filter>HTML Help Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="changelog_shell.htm" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="img\bookmark_manager.png">
