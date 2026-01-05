@@ -290,102 +290,10 @@
     </None>
     <CustomBuild Include="Dn-FamiTracker.hhp">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">start /wait hhc "$(SolutionName).hhp"
-if not exist "$(SolutionName).chm" goto :HelpError
-copy "$(SolutionName).chm" "$(OutDir)$(SolutionName).chm"
-goto :HelpDone
-:HelpError
-echo $(ProjectDir)$(SolutionName).hhp(1) : error:Problem encountered creating help file
-echo.
-:HelpDone
-echo.</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">start /wait hhc "$(SolutionName).hhp"
-if not exist "$(SolutionName).chm" goto :HelpError
-copy "$(SolutionName).chm" "$(OutDir)$(SolutionName).chm"
-goto :HelpDone
-:HelpError
-echo $(ProjectDir)$(SolutionName).hhp(1) : error:Problem encountered creating help file
-echo.
-:HelpDone
-echo.</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">start /wait hhc "$(SolutionName).hhp"
-if not exist "$(SolutionName).chm" goto :HelpError
-copy "$(SolutionName).chm" "$(OutDir)$(SolutionName).chm"
-goto :HelpDone
-:HelpError
-echo $(ProjectDir)$(SolutionName).hhp(1) : error:Problem encountered creating help file
-echo.
-:HelpDone
-echo.</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">start /wait hhc "$(SolutionName).hhp"
-if not exist "$(SolutionName).chm" goto :HelpError
-copy "$(SolutionName).chm" "$(OutDir)$(SolutionName).chm"
-goto :HelpDone
-:HelpError
-echo $(ProjectDir)$(SolutionName).hhp(1) : error:Problem encountered creating help file
-echo.
-:HelpDone
-echo.</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">start /wait hhc "$(SolutionName).hhp"
-if not exist "$(SolutionName).chm" goto :HelpError
-copy "$(SolutionName).chm" "$(OutDir)$(SolutionName).chm"
-goto :HelpDone
-:HelpError
-echo $(ProjectDir)$(SolutionName).hhp(1) : error:Problem encountered creating help file
-echo.
-:HelpDone
-echo.</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">start /wait hhc "$(SolutionName).hhp"
-if not exist "$(SolutionName).chm" goto :HelpError
-copy "$(SolutionName).chm" "$(OutDir)$(SolutionName).chm"
-goto :HelpDone
-:HelpError
-echo $(ProjectDir)$(SolutionName).hhp(1) : error:Problem encountered creating help file
-echo.
-:HelpDone
-echo.</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">start /wait hhc "$(SolutionName).hhp"
-if not exist "$(SolutionName).chm" goto :HelpError
-copy "$(SolutionName).chm" "$(OutDir)$(SolutionName).chm"
-goto :HelpDone
-:HelpError
-echo $(ProjectDir)$(SolutionName).hhp(1) : error:Problem encountered creating help file
-echo.
-:HelpDone
-echo.</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">start /wait hhc "$(SolutionName).hhp"
-if not exist "$(SolutionName).chm" goto :HelpError
-copy "$(SolutionName).chm" "$(OutDir)$(SolutionName).chm"
-goto :HelpDone
-:HelpError
-echo $(ProjectDir)$(SolutionName).hhp(1) : error:Problem encountered creating help file
-echo.
-:HelpDone
-echo.</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Making help file...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">Making help file...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Making help file...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">Making help file...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Making help file...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">Making help file...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Making help file...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">Making help file...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)$(SolutionName).chm</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">$(OutDir)$(SolutionName).chm</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(SolutionName).chm</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">$(OutDir)$(SolutionName).chm</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)$(SolutionName).chm</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">$(OutDir)$(SolutionName).chm</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(SolutionName).chm</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">$(OutDir)$(SolutionName).chm</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command >call $(ProjectDir)compile-chm.bat "$(OutDir)"</Command>
+      <Message>Making help file...</Message>
+      <Outputs >$(OutDir)$(SolutionName).chm</Outputs>
+      <AdditionalInputs>HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
     </CustomBuild>
     <None Include="2a03.htm">
       <DeploymentContent>true</DeploymentContent>
@@ -398,62 +306,13 @@ echo.</Command>
     </None>
     <CustomBuild Include="changelog_shell.htm">
       <DeploymentContent>true</DeploymentContent>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Updating changelog.htm.</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">Updating changelog.htm.</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">Updating changelog.htm.</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Updating changelog.htm.</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Updating changelog.htm.</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">Updating changelog.htm.</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">Updating changelog.htm.</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Updating changelog.htm.</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BuildInParallel>
-      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">true</BuildInParallel>
-      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">true</BuildInParallel>
-      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BuildInParallel>
-      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
-      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">true</BuildInParallel>
-      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">true</BuildInParallel>
-      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">true</DeploymentContent>
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">true</DeploymentContent>
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">true</DeploymentContent>
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">true</DeploymentContent>
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">false</LinkObjects>
-      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">true</TreatOutputAsContent>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">false</LinkObjects>
-      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">true</TreatOutputAsContent>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatOutputAsContent>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">false</LinkObjects>
-      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">true</TreatOutputAsContent>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">false</LinkObjects>
-      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">true</TreatOutputAsContent>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</TreatOutputAsContent>
+      <Command>call $(ProjectDir)update-changelog-htm.bat</Command>
+      <Message>Updating changelog.htm.</Message>
+      <Outputs>$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
+      <BuildInParallel>true</BuildInParallel>
+      <DeploymentContent>true</DeploymentContent>
+      <TreatOutputAsContent>true</TreatOutputAsContent>
+      <AdditionalInputs>$(SolutionDir)CHANGELOG.md;%(AdditionalInputs)</AdditionalInputs>
     </CustomBuild>
     <None Include="command_line.htm">
       <DeploymentContent>true</DeploymentContent>
