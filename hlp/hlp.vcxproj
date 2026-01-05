@@ -398,28 +398,28 @@ echo.</Command>
     </None>
     <CustomBuild Include="changelog_shell.htm">
       <DeploymentContent>true</DeploymentContent>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)docs/CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Updating changelog.htm.</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)docs/CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">Updating changelog.htm.</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|Win32'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)docs/CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">Updating changelog.htm.</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|Win32'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)docs/CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Updating changelog.htm.</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)docs/CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Updating changelog.htm.</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)docs/CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">Updating changelog.htm.</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Debug|x64'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)docs/CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">Updating changelog.htm.</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ASAN-Release|x64'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)docs/CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">powershell -Command "(Get-Content $(SolutionDir)Dn-help\hlp\changelog_shell.htm).Replace('PATCH CHANGELOG HERE', (pandoc $(SolutionDir)CHANGELOG.md -f gfm -t html5)) | Set-Content -encoding UTF8 $(SolutionDir)Dn-help\hlp\changelog.htm"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Updating changelog.htm.</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BuildInParallel>
