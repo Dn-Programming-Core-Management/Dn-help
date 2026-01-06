@@ -29,6 +29,7 @@ Last updated: January 06, 2025
 - Move `CHANGELOG.md` to solution root folder (@Gumball2415 #15)
 - Update GitHub pull request template (@Gumball2415 #15)
 - Refactor HTMLHelp custom build commands (@Gumball2415 #15)
+- Add change log (@Gumball2415 #15)
 
 
 
