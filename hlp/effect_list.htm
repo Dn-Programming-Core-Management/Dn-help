@@ -204,7 +204,7 @@
 
     <a name="FinePitch" class="boldText">Pxx - Fine pitch</a><br />
     <p class="text">Sets the fine pitch in <b>xx</b> pitch units.<br />
-    The default value is <b>80</b>.<br />
+    The default value is <b>80</b>.</p>
     <br />
 
     <a name="NoteSlideUp" class="boldText">Qxy - Note slide up</a><br />
@@ -248,7 +248,7 @@
             </tr>
             <tr>
                 <td class="highlight">Enable</td>
-                <td></td>
+                <td>(Silence)</td>
                 <td>Tone</td>
                 <td>Noise</td>
                 <td>Tone<br>Noise</td>
@@ -304,7 +304,7 @@
     <br />
 
     <a name="VRC7Write" class="boldText">Ixx - Custom patch byte write</a><br />
-    <p class="text">Byte <b>xx</b> to be written at the address port specified. To be used with <b>Hxx</b>.<br />
+    <p class="text">Byte <b>xx</b> to be written at the address port specified. To be used with <b>Hxx</b>.</p>
     <br />
 
     <hr />
@@ -365,68 +365,167 @@
     <br />
 
     <a name="Volume2A03LengthCounter" class="boldText">Exx - 2A03 hardware length counter</a><br />
-    <p class="text">Enables the length counter and sets it to the value listed in the table below.<br />
+    <p class="text">Enables the length counter and writes the raw value listed in the table below. This raw value corresponds to a note length in
+    <a href="https://www.nesdev.org/wiki/APU_Frame_Counter" target="new">APU frame counter cycles</a>.<br />
     On the triangle channel, this also intializes its linear counter; whichever shorter will cut the triangle output first.<br />
-    Default value is <b>01 (254)</b>.</p>
-    <table class="default" border="1" cellpadding="3px" border="1" style="width: 480px">
+    For more information, see the
+    <a target="new"href="https://www.nesdev.org/wiki/APU_Length_Counter#Table_structure">length counter table</a>.<br />
+    Default value is <b><code>00</code> (10 cycles)</b>.</p>
+
+    <p class="text">Linear length values:</p>
+
+    <table class="default" border="1" cellpadding="3px" style="width: 120px">
         <tr>
-            <td class="highlight"></td>
-            <td class="highlight">x0</td>
-            <td class="highlight">x1</td>
-            <td class="highlight">x2</td>
-            <td class="highlight">x3</td>
-            <td class="highlight">x4</td>
-            <td class="highlight">x5</td>
-            <td class="highlight">x6</td>
-            <td class="highlight">x7</td>
-            <td class="highlight">x8</td>
-            <td class="highlight">x9</td>
-            <td class="highlight">xA</td>
-            <td class="highlight">xB</td>
-            <td class="highlight">xC</td>
-            <td class="highlight">xD</td>
-            <td class="highlight">xE</td>
-            <td class="highlight">xF</td>
+            <td class="highlight">Raw value (hex)</td>
+            <td class="highlight">Length in cycles (decimal)</td>
         </tr>
         <tr>
-            <td class="highlight">0x</td>
-            <td>10</td>
-            <td>254</td>
-            <td>20</td>
+            <td><code>03</code></td>
             <td>2</td>
-            <td>40</td>
+        </tr>
+        <tr>
+            <td><code>05</code></td>
             <td>4</td>
-            <td>80</td>
+        </tr>
+        <tr>
+            <td><code>07</code></td>
             <td>6</td>
-            <td>160</td>
+        </tr>
+        <tr>
+            <td><code>09</code></td>
             <td>8</td>
-            <td>60</td>
+        </tr>
+        <tr>
+            <td><code>0B</code></td>
             <td>10</td>
-            <td>14</td>
+        </tr>
+        <tr>
+            <td><code>0D</code></td>
             <td>12</td>
-            <td>26</td>
+        </tr>
+        <tr>
+            <td><code>0F</code></td>
             <td>14</td>
         </tr>
         <tr>
-            <td class="highlight">1x</td>
-            <td>12</td>
+            <td><code>11</code></td>
             <td>16</td>
-            <td>24</td>
+        </tr>
+        <tr>
+            <td><code>13</code></td>
             <td>18</td>
-            <td>48</td>
+        </tr>
+        <tr>
+            <td><code>15</code></td>
             <td>20</td>
-            <td>96</td>
+        </tr>
+        <tr>
+            <td><code>17</code></td>
             <td>22</td>
-            <td>192</td>
+        </tr>
+        <tr>
+            <td><code>19</code></td>
             <td>24</td>
-            <td>72</td>
+        </tr>
+        <tr>
+            <td><code>1B</code></td>
             <td>26</td>
-            <td>16</td>
+        </tr>
+        <tr>
+            <td><code>1D</code></td>
             <td>28</td>
-            <td>32</td>
+        </tr>
+        <tr>
+            <td><code>1F</code></td>
             <td>30</td>
         </tr>
+        <tr>
+            <td><code>01</code></td>
+            <td>254</td>
+        </tr>
     </table>
+
+    <p class="text">Base length 12:</p>
+
+    <table class="default" border="1" cellpadding="3px" style="width: 120px">
+        <tr>
+            <td class="highlight">Raw value (hex)</td>
+            <td class="highlight">Length in cycles (decimal)</td>
+        </tr>
+        <tr>
+            <td><code>10</code></td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td><code>12</code></td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td><code>14</code></td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td><code>16</code></td>
+            <td>96</td>
+        </tr>
+        <tr>
+            <td><code>18</code></td>
+            <td>192</td>
+        </tr>
+        <tr>
+            <td><code>1A</code></td>
+            <td>72</td>
+        </tr>
+        <tr>
+            <td><code>1C</code></td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td><code>1E</code></td>
+            <td>32</td>
+        </tr>
+    </table>
+
+    <p class="text">Base length 10:</p>
+
+    <table class="default" border="1" cellpadding="3px" style="width: 120px">
+        <tr>
+            <td class="highlight">Raw value (hex)</td>
+            <td class="highlight">Length in cycles (decimal)</td>
+        </tr>
+        <tr>
+            <td><code>00</code></td>
+            <td>10</td>
+        </tr>
+            <td><code>02</code></td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td><code>04</code></td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td><code>06</code></td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td><code>08</code></td>
+            <td>160</td>
+        </tr>
+        <tr>
+            <td><code>0A</code></td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td><code>0C</code></td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td><code>0E</code></td>
+            <td>26</td>
+        </tr>
+    </table>
+
     <p class="text">This effect also works for the MMC5 pulse channels.<br />
     Valid range: <b>00 - 1F</b>.</p>
     <br />
