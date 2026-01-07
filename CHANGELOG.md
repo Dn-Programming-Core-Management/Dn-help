@@ -142,10 +142,10 @@ This update simply adds the changelog information from 0.4.0.0 and 0.4.0.1 into 
 
 Additions
 
-- Updated the changelog to version 0.3.1.0 
+- Updated the changelog to version 0.3.1.0
 
 
 
-#### Note from Dn-FT maintainer:
+## Note from Dn-FT maintainer
 
 Before this release, Dn-help used to be part of the main repository, where it was first reimplemented at Dn0.3.0.0. Then, Dn-help became its own subrepository, where the initial commit was made on 2021-04-30, sometime after Dn0.3.0.0.
