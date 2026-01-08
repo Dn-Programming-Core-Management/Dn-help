@@ -306,13 +306,13 @@
     </None>
     <CustomBuild Include="changelog_shell.htm">
       <DeploymentContent>true</DeploymentContent>
-      <Command>call $(ProjectDir)update-changelog-htm.bat</Command>
+      <Command>call $(ProjectDir)update-htm-templates.bat</Command>
       <Message>Updating changelog.htm.</Message>
-      <Outputs>$(ProjectDir)changelog.htm;%(Outputs)</Outputs>
+      <Outputs>$(ProjectDir)changelog.htm;license.htm;%(Outputs)</Outputs>
       <BuildInParallel>true</BuildInParallel>
       <DeploymentContent>true</DeploymentContent>
       <TreatOutputAsContent>true</TreatOutputAsContent>
-      <AdditionalInputs>$(SolutionDir)CHANGELOG.md;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs>$(SolutionDir)CHANGELOG.md;$(SolutionDir)LICENSE.md;%(AdditionalInputs)</AdditionalInputs>
     </CustomBuild>
     <None Include="command_line.htm">
       <DeploymentContent>true</DeploymentContent>

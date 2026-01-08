@@ -205,7 +205,7 @@
 		</OBJECT>
 	<LI> <OBJECT type="text/sitemap">
 		<param name="Name" value="License">
-		<param name="Local" value="../LICENSE.txt">
+		<param name="Local" value="license.htm">
 		</OBJECT>
 </UL>
 </BODY></HTML>
