@@ -81,7 +81,7 @@ table.default
     width: 100%; 
     background-color: #FCFCFC;
 }
-td.highlight
+td.highlight, th.highlight
 {
 	background-color: #E0E0E0;
 	height: 22px;
