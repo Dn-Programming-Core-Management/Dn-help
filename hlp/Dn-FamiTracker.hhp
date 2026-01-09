@@ -72,13 +72,17 @@ menu_song.htm
 groove_settings.htm
 detune_settings.htm
 bookmark_manager.htm
+license.htm
+..\..\LICENSE-MIT-0.txt
+..\..\LICENSE-GPLv2.txt
+..\..\LICENSE-GPLv3.txt
 
 [ALIAS]
 CHANGE_LOG						= changelog.htm
 DPCM_IMPORT						= dpcm_import.htm
 EFFECTS							= effect_list.htm
 HIDD_ABOUTBOX					= main_index.htm
-HIDD_BOOKMARKS=bookmark_manager.htm
+HIDD_BOOKMARKS					= bookmark_manager.htm
 HIDD_COMMAND_LINE				= command_line.htm
 HIDD_COMMENTS					= comments.htm
 HIDD_CONFIG_APPEARANCE			= config_appearance.htm
