@@ -8,6 +8,11 @@
 
     <span class="topic">2A03/2A07 APU</span><hr />
 
+    <div style="text-align: center;">
+        <img id="img" src="img/chip_2A03.png"
+        alt="Picture of the 2A03G chip" height="100px"/>
+    </div>
+
     <p class="heading">About</p>
 
     <p class="text">
@@ -76,12 +81,6 @@
             More info is available on the bottom of this page.
         </p>
     </td></tr></table>
-
-    <br />
-    <div style="text-align: center;">
-        <img id="img" src="img/chip_2A03.png"
-        alt="Picture of the 2A03G chip" height="100px"/>
-    </div>
 
     <hr />
     <p class="heading"><a name="Instruments">Instruments</a></p>
@@ -167,8 +166,11 @@
     <ul class="text">
         <li>
             <b>Load</b><br />
-            Load samples from files, the default file extension for DPCM files is &#39;.dmc&#39;. The format must be 1-bit delta PCM and max size is 4081
-            bytes. The size should be a multiple of 16 bytes with 1 additional byte, otherwise the sample will be padded.<br /><br />
+            Load samples from files, the default file extension for DPCM files 
+            is &#39;.dmc&#39;.<br />
+            The format must be 1-bit delta PCM and the maximum size is 4081
+            bytes.
+            The size should be a multiple of 16 bytes with 1 additional byte, otherwise the sample will be padded.<br /><br />
         </li>
         <li>
             <b>Unload</b><br />
@@ -180,8 +182,8 @@
         </li>
         <li>
             <b>Import</b><br />
-            Load and convert PCM&nbsp; files to delta PCM.
-            <a href="dpcm_import.htm">See more info about importing PCM.</a><br /><br />
+            Load and convert .wav PCM&nbsp; files to DPCM.
+            <a href="dpcm_import.htm">See more info about importing .wav PCM.</a><br /><br />
         </li>
         <li>
             <b>Edit</b><br />
