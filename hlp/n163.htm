@@ -19,10 +19,11 @@
     <p class="heading">About</p>
 
     <p class="text">
-        This chip was created by Namco and contains up to eight wave channels. This chip
-        was earlier erroneously known as Namco 106 (which is the same chip but without
-        the audio capabilities). It was used in multiple Namco games, such as
-        Final Lap, King of Kings, Mappy Kids and Rolling Thunder.</p>
+        The Namco Custom 163 IC ("N163", also known as "C163") was created by Namco and contains up to eight multiplexing wave channels.
+        This chip was earlier erroneously known as "Namco 106", which itself was erroneously assumed to exist.</p>
+
+    <p class="text">
+        It was used in multiple Namco games, such as Digital Devil Story: Megami Tensei II, Erika to Satoru no Yume Bouken, Final Lap, King of Kings, Mappy Kids, Rolling Thunder, and others.</p>
 
     <p class="text">
         The chip has 128 bytes of RAM for waveform storage and channel registers.
@@ -42,7 +43,9 @@
         The rate for this channel switching is around 120 kHz, which means that
         <b>when all 8 channels are enabled, there will be audible channel switching noise at 15 kHz</b>
         (or 17 kHz when 7 channels are enabled). Some Namco carts do have a LP filter to deal with
-        this, but it did little to alleviate the high pitched noise, so it's still very audible.
+        this, but it did little to alleviate the high pitched noise, so it's still very audible.</p>
+
+    <p class="text">
         To avoid this, either disable multiplexing in the emulation configuration settings, or use a sufficient
         lowpass filter in the emulation configuration settings.</p>
 
