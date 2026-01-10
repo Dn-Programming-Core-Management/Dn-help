@@ -33,19 +33,31 @@
         <p class="heading"><a name="Instruments">Instruments</a></p>
         <img src="img/inst_sun5.png">
         <p class="text">
-            Instruments on the Sunsoft 5B are fairly close to the 2A03. However the 
-            biggest difference lies in the Noise/Mode macro, which replaces the Duty
-            macro present on the 2A03. This macro allows one to toggle noise, tone, 
-            and envelope on the channel, also allowing one to freely mix between the 
-            three.
-            <br>
-            Another major change from the 2A03's instruments lies in the volume. 
-            While the 2A03's design gives it linear volume, the Sunsoft 5B has 
-            what is "exponential volume", which behaves differently than the 2A03's 
-            linear volume.
-            <!--Explain exponential volume better in the future, maybe?-->
-        </p>
+            Instruments on the Sunsoft 5B are fairly close to the 2A03. However 
+            the biggest difference lies in the Noise/Mode macro, which replaces 
+            the Duty macro present on the 2A03. This macro allows one to toggle 
+            noise, tone, and envelope on the channel, also allowing one to 
+            freely mix between the three.</p>
+
+        <p class="text">
+            Another major change from the 2A03's instruments lies in the 
+            volume. While the 2A03's design gives it linear volume, the Sunsoft 
+            5B has what is "exponential volume", which behaves differently than 
+            the 2A03's linear volume</p>
+
+        <p class="text">
+            The 4-bit exponential volume control of the 5B increases or 
+            decreases the volume of a channel equal steps of around 3dB. Each 
+            step from one level to the next in exponential volume sounds 
+            perceptibly louder by exactly the same amount. This is in contrast 
+            to linear volume, where higher levels sound roughly the same but 
+            lower levels have large swells in volume from one step to the next.
+            This also means you can set a channel 2 times louder or quieter by 
+            adding or subtracting 2 to the volume, instead of needing to input 
+            half or double of a linear volume value.</p>
+
         <hr>
+
         <p class="heading">Noise/Mode Macro</p>
         <img src="img/inst_sun5_nmode.png">
         <p class="text">
@@ -57,71 +69,70 @@
         </p>
         <hr>
         <a name="5BEnvelopes"><p class="heading">5B Envelopes</p></a>
-        <p class="text">The Sunsoft 5B has a configurable envelope generator, able to 
-            play back 16 preset envelope sets. The table below shows each envelope and 
-            its functions.
-        </p>
+        <p class="text">
+            The Sunsoft 5B has a configurable envelope generator, able to play back 16 preset envelope sets. The table below shows each envelope and its functions.</p>
+
         <p class="footer"><i>Note: These are intended to be used with the H0y/Hxy command.</i></p>
-        
-        <table class="default" style="width: auto;" border="1" cellpadding="3px">
+
+        <table class="default" style="width: 500px;" border="1" cellpadding="3px">
             <thead>
-              <tr>
-                <td class="highlight">H0y Hex Command</th>
-                <td class="highlight">Envelope Shape</th>
-                <td class="highlight">Envelope Description</th>
-              </tr>
+                <tr>
+                    <td class="highlight" style="width: 120px;">H0y Hex Command</th>
+                    <td class="highlight">Envelope Shape</th>
+                    <td class="highlight">Envelope Description</th>
+                </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>$0 to $3</td>
-                <td><img src="img/s5b_env_0-3,_9.png" alt="|\________"></td>
-                <td>A one-shot decay envelope. Usually used at extremely low frequencies mixed with tone to produce a hardware decay envelope.</td>
-              </tr>
-              <tr>
-                <td>$4 to $7</td>
-                <td><img src="img/s5b_env_4-7,_f.png" alt="/|________"></td>
-                <td>A one-shot attack envelope. </td>
-              </tr>
-              <tr>
-                <td>$8</td>
-                <td><img src="img/s5b_env_8.png" alt="|\_|\_|\_|\_"></td>
-                <td>Looped decay envelope. Functionally identical to a sawtooth wave at audible frequencies.</td>
-              </tr>
-              <tr>
-                <td>$9</td>
-                <td><img src="img/s5b_env_0-3,_9.png" alt="|\________"></td>
-                <td>Identical to $0.</td>
-              </tr>
-              <tr>
-                <td>$A</td>
-                <td><img src="img/s5b_env_a.png" alt="\/\/\/\/\/\/\/"></td>
-                <td>Looped Decay and Attack envelope. Identical to a symmetrical sawtooth wave, referred to as a "triangle" wave.</td>
-              </tr>
-              <tr>
-                <td>$B</td>
-                <td><img src="img/s5b_env_b.png" alt="\|&#8254&#8254&#8254&#8254&#8254&#8254&#8254&#8254"></td>
-                <td>One-shot decay envelope. Holds the output at maximum volume when finished.</td>
-              </tr>
-              <tr>
-                <td>$C</td>
-                <td><img src="img/s5b_env_c.png" alt="_/|_/|_/|_/|"></td>
-                <td>Looped attack envelope. Functionally identical to envelope $8 at audible frequencies.</td>
-              </tr>
-              <tr>
-                <td>$D</td>
-                <td><img src="img/s5b_env_d.png" alt="|/&#8254&#8254&#8254&#8254&#8254&#8254&#8254&#8254"></td>
-                <td>One-shot attack envelope. Holds the output at maximum volume when finished.</td>
-              </tr>
-              <tr>
-                <td>$E</td>
-                <td><img src="img/s5b_env_e.png" alt="/\/\/\/\/\/\/\"></td>
-                <td>Looped Attack and Decay envelope. Virtually identical to $A.</td>
-              </tr>
-              <tr>
-                <td>$F</td>
-                <td><img src="img/s5b_env_4-7,_f.png" alt="/|________"></td>
-                <td>Identical to $4.</td>
-              </tr>
+                <tr>
+                    <td>$0 to $3</td>
+                    <td><img src="img/s5b_env_0-3,_9.png" alt="|\________"></td>
+                    <td valign="top">A one-shot decay envelope. Usually used at extremely low frequencies mixed with tone to produce a hardware decay envelope.</td>
+                </tr>
+                <tr>
+                    <td>$4 to $7</td>
+                    <td><img src="img/s5b_env_4-7,_f.png" alt="/|________"></td>
+                    <td>A one-shot attack envelope. </td>
+                </tr>
+                <tr>
+                    <td>$8</td>
+                    <td><img src="img/s5b_env_8.png" alt="|\_|\_|\_|\_"></td>
+                    <td>Looped decay envelope. Functionally identical to a sawtooth wave at audible frequencies.</td>
+                </tr>
+                <tr>
+                    <td>$9</td>
+                    <td><img src="img/s5b_env_0-3,_9.png" alt="|\________"></td>
+                    <td>Identical to $0.</td>
+                </tr>
+                <tr>
+                    <td>$A</td>
+                    <td><img src="img/s5b_env_a.png" alt="\/\/\/\/\/\/\/"></td>
+                    <td>Looped Decay and Attack envelope. Identical to a symmetrical sawtooth wave, referred to as a "triangle" wave.</td>
+                </tr>
+                <tr>
+                    <td>$B</td>
+                    <td><img src="img/s5b_env_b.png" alt="\|&#8254&#8254&#8254&#8254&#8254&#8254&#8254&#8254"></td>
+                    <td>One-shot decay envelope. Holds the output at maximum volume when finished.</td>
+                </tr>
+                <tr>
+                    <td>$C</td>
+                    <td><img src="img/s5b_env_c.png" alt="_/|_/|_/|_/|"></td>
+                    <td>Looped attack envelope. Functionally identical to envelope $8 at audible frequencies.</td>
+                </tr>
+                <tr>
+                    <td>$D</td>
+                    <td><img src="img/s5b_env_d.png" alt="|/&#8254&#8254&#8254&#8254&#8254&#8254&#8254&#8254"></td>
+                    <td>One-shot attack envelope. Holds the output at maximum volume when finished.</td>
+                </tr>
+                <tr>
+                    <td>$E</td>
+                    <td><img src="img/s5b_env_e.png" alt="/\/\/\/\/\/\/\"></td>
+                    <td>Looped Attack and Decay envelope. Virtually identical to $A.</td>
+                </tr>
+                <tr>
+                    <td>$F</td>
+                    <td><img src="img/s5b_env_4-7,_f.png" alt="/|________"></td>
+                    <td>Identical to $4.</td>
+                </tr>
             </tbody>
         </table>
 
