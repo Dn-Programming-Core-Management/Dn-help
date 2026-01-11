@@ -290,9 +290,9 @@
     </None>
     <CustomBuild Include="Dn-FamiTracker.hhp">
       <FileType>Document</FileType>
-      <Command >call $(ProjectDir)compile-chm.bat "$(OutDir)"</Command>
+      <Command>call $(ProjectDir)compile-chm.bat "$(OutDir)"</Command>
       <Message>Making help file...</Message>
-      <Outputs >$(OutDir)$(SolutionName).chm</Outputs>
+      <Outputs>$(OutDir)$(SolutionName).chm</Outputs>
       <AdditionalInputs>HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
     </CustomBuild>
     <None Include="2a03.htm">
@@ -304,15 +304,16 @@
     <None Include="changelog.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <CustomBuild Include="changelog_shell.htm">
+    <CustomBuild Include="changelog-template.htm">
       <DeploymentContent>true</DeploymentContent>
       <Command>call $(ProjectDir)update-htm-templates.bat</Command>
       <Message>Updating changelog.htm.</Message>
-      <Outputs>$(ProjectDir)changelog.htm;license.htm;%(Outputs)</Outputs>
+      <Outputs>$(ProjectDir)changelog.htm;$(ProjectDir)license.htm;%(Outputs)</Outputs>
       <BuildInParallel>true</BuildInParallel>
       <DeploymentContent>true</DeploymentContent>
       <TreatOutputAsContent>true</TreatOutputAsContent>
-      <AdditionalInputs>$(SolutionDir)CHANGELOG.md;$(SolutionDir)LICENSE.md;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs>$(ProjectDir)license-template.htm;$(SolutionDir)CHANGELOG.md;$(SolutionDir)LICENSE.md;$(SolutionDir)LICENSE-GPLv2.txt;$(SolutionDir)LICENSE-GPLv3.txt;$(SolutionDir)LICENSE-MIT-0.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Message>Updating templated pages.</Message>
     </CustomBuild>
     <None Include="command_line.htm">
       <DeploymentContent>true</DeploymentContent>
