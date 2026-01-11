@@ -6,23 +6,34 @@ Written by D.P.C.M.
 
 Version 0.5.2.9
 
-Last updated: January 06, 2025
+Last updated: January 11, 2025
 
 ---
 
-## Unreleased - 2026-01-06
+## Unreleased - 2026-01-11
 
 ### Important changes
 
-- ...
+- Remove unused `sound.htm` page (@Gumball2415 #16)
+- Explicitly mention licensing for Dn-help (@Gumball2415 #16)
 
 ### Improvements
 
-- ...
+- Reword module properties description (@Gumball2415 #16)
+- Declutter and update pattern editor descriptions (@Gumball2415 #16)
+- Add description of hold instrument `&&` command (@brickblock369 @Gumball2415 #14 #16)
+- Add more detailed expansion audio chip images (@Gumball2415 #16)
+- Link GPLv2, GPLv3, and MIT-0 license texts (@Gumball2415 #16)
+- Link to DPCM pitch table in DPCM import/editor page (@Gumball2415 #16)
+- Update Namco 163 information (@Gumball2415 #16)
+- Add description of exponential volume in 5B instruments page (@Gumball2415 #16)
 
 ### Bug fixes
 
-- ...
+- Fix spellings of "GitHub" (@Gumball2415 #16)
+- Fix and refactor table stylings (@Gumball2415 #16)
+	- Sort `Exx` hardware length counter value table
+	- Clarify 5B `V0x` command table
 
 ### Internal
 
@@ -30,6 +41,7 @@ Last updated: January 06, 2025
 - Update GitHub pull request template (@Gumball2415 #15)
 - Refactor HTMLHelp custom build commands (@Gumball2415 #15)
 - Add change log (@Gumball2415 #15)
+- Add dedicated Python script for patching template files (@Gumball2415 #9 #16)
 
 
 
