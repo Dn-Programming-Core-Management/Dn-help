@@ -205,7 +205,21 @@
 		</OBJECT>
 	<LI> <OBJECT type="text/sitemap">
 		<param name="Name" value="License">
-		<param name="Local" value="../LICENSE.txt">
+		<param name="Local" value="license.htm">
 		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GNU General Public License v2">
+			<param name="Local" value="LICENSE-GPLv2.txt">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GNU General Public License v3">
+			<param name="Local" value="LICENSE-GPLv3.txt">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MIT No Attribution License">
+			<param name="Local" value="LICENSE-MIT-0.txt">
+			</OBJECT>
+	</UL>
 </UL>
 </BODY></HTML>

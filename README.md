@@ -1,6 +1,6 @@
 # Dn-Famitracker Help
 
-This repository hosts the source code for [Dn-Famitracker](https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker)'s help dialog. While the main program indeed has this contained within it's own source code, the main use of this repository is to provide finalized and finished versions of the Help File to all new releases of Dn-FamiTracker. 
+This repository hosts the source code for [Dn-Famitracker](https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker)'s help dialog. While the main program indeed has this contained within it's own source code, the main use of this repository is to provide finalized and finished versions of the Help File to all new releases of Dn-FamiTracker.
 
 As such it is best to consider this repository a "development" build of the help file, and may not represent the "final" builds included with Dn-FamiTracker releases.
 
@@ -21,4 +21,4 @@ All contributions are welcome, feel free to submit pull requests, or submit sugg
 
 ## License
 
-Since this is a fragment of [Dn-Famitracker](https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker)'s codebase, the license falls under the same terms.
+Since this is a fragment of [Dn-Famitracker](https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker)'s codebase, the license falls under the same terms. Dn-help project files are licensed under GPL v3.
