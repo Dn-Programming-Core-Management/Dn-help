@@ -6,6 +6,6 @@ listing out things to do so i won't forget to do them -persune
 - [ ] Update copyright years, version, and version in `main_index.htm`
 - [ ] Update [CHANGELOG.md](CHANGELOG.md) to reflect latest version.
 	- see  [commit changelog format](../docs/commit_changelog_format.md) of parent Dn-FamiTracker repository
-- [ ] Push version rag to the repo
+- [ ] Push version tag to the repo
 - [ ] Make a release on Dn-help to coincide with main repo
 	- [ ] list changes from changelog
