@@ -4,13 +4,13 @@ Change Log
 
 Written by D.P.C.M.
 
-Version 0.5.2.9
+Version 0.5.3
 
-Last updated: January 11, 2025
+Last updated: 2026-05-25
 
 ---
 
-## Unreleased - 2026-01-11
+## Release 0.5.3 - 2026-05-25
 
 ### Important changes
 
@@ -42,6 +42,9 @@ Last updated: January 11, 2025
 - Refactor HTMLHelp custom build commands (@Gumball2415 #15)
 - Add change log (@Gumball2415 #15)
 - Add dedicated Python script for patching template files (@Gumball2415 #9 #16)
+- Update change log commit and commit format to parent repo's (@Gumball2415 #17)
+- Update PR template change log format (@Gumball2415 #17)
+- Add guide on parallel subrepo PRs (@Gumball2415 #17)
 
 
 
