@@ -3,6 +3,22 @@
 <META NAME="GENERATOR" Content="Microsoft Visual Studio 8.0">
 <TITLE></TITLE>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        .swatch {
+            display:flex;
+            height:auto;
+            width:fit-content;
+            background-color:#FFFFFF;
+            color:#0000;
+            border-color:#000;
+            border-style:solid;
+            border-width:1px;
+        }
+        .swatchText {
+            float:left;
+            padding-right:3px;
+        }
+    </style>
 </HEAD>
 <BODY>
 
@@ -21,108 +37,121 @@
         <li><b>Colors</b><br />
             In this group you can set each part of your pattern editor's color shown below:
             <ul>
-                <li>
-                    <b>Background</b><br />
-                        Default: <span style="color:#000000">■</span>
-                        <br />
-                        This is background of pattern editor.
-                </li>
-                <li>
-                    <b>Highlighted background</b><br />
-                        Default: <span style="color:#101000">■</span>
-                        <br />
-                        This is Highlighted background of pattern editor.
-                </li>
-                <li>
-                    <b>Highlighted background 2</b><br />
-                        Default: <span style="color:#202000">■</span>
-                        <br />
-                        This is Highlighted background 2 of pattern editor.
-                </li>
-                <li>
-                    <b>Pattern text</b><br />
-                        Default: <span style="color:#00FF00">■</span>
-                        <br />
-                        This is Pattern text of pattern editor.
-                </li>
-                <li>
-                    <b>Highlighted pattern text</b><br />
-                        Default: <span style="color:#F0F000">■</span>
-                        <br />
-                        This is Highlighted pattern text of pattern editor.
-                </li>
-                <li>
-                    <b>Highlighted pattern text 2</b><br />
-                        Default: <span style="color:#FFFF60">■</span>
-                        <br />
-                        This is Highlighted pattern 2 text of pattern editor.
-                </li>
-                <li>
-                    <b>Instrument column</b><br />
-                        Default: <span style="color:#80FF80">■</span>
-                        <br />
-                        This is Instrument column text of pattern editor.
-                </li>
-                <li>
-                    <b>Volume column</b><br />
-                        Default: <span style="color:#8080FF">■</span>
-                        <br />
-                        This is Volume column text of pattern editor.
-                </li>
-                <li>
-                    <b>Effect number column</b><br />
-                        Default: <span style="color:#FF8080">■</span>
-                        <br />
-                        This is Effect number column text of pattern editor.
-                </li>
-                <li>
-                    <b>Selection</b><br />
-                        Default: <span style="color:#867DF2">■</span>
-                        <br />
-                        This is Selection color of pattern editor.
-                </li>
-                <li>
-                    <b>Cursor</b><br />
-                        Default: <span style="color:#808080">■</span>
-                        <br />
-                        This is Cursor color of pattern editor.
-                </li>
-                <li>
-                    <b>Current row (normal mode)</b><br />
-                        Default: <span style="color:#3020A0">■</span>
-                        <br />
-                        This is Current row (normal mode) color of pattern editor.
-                </li>
-                <li>
-                    <b>Current row (edit mode)</b><br />
-                        Default: <span style="color:#802030">■</span>
-                        <br />
-                        This is Current row (edit mode) color of pattern editor.
-                </li>
-                <li>
-                    <b>Current row (edit mode)</b><br />
-                        Default: <span style="color:#500040">■</span>
-                        <br />
-                        This is Current row (playing) color of pattern editor.
-                </li>
-                <li>
-                    <b>Header Background</b><br />
-                        Default: <span style="color:#FFFFFF">■</span>
-                        <br />
-                        This is Header Background color of pattern editor's header section.
-                </li>
-                <li>
-                    <b>Header Corner</b><br />
-                        Default: <span style="color:#FFFFFF">■</span>
-                        <br />
-                        This is Header Corner color of pattern editor's header section.
-                </li>
-                <li>
-                    <b>Header text</b><br />
-                        Default: <span style="color:#000000">■</span>
-                        <br />
-                        This is Header text color of pattern editor's header section.
-                </li>
+                <li><i>Background color</i></li>
+                <ul>
+                    <li>
+                        <b>Background</b><br />
+                            <div class="swatchText">Default:
+                                <code>#000000</code></div>
+                            <div class="swatch" style="background-color:#000000;">[ ]</div>
+                    </li>
+                    <li>
+                        <b>Highlighted background</b><br />
+                            <div class="swatchText">Default:
+                                <code>#101000</code></div>
+                            <div class="swatch" style="background-color:#101000;">[ ]</div>
+                    </li>
+                    <li>
+                        <b>Highlighted background 2</b><br />
+                            <div class="swatchText">Default:
+                                <code>#202000</code>
+                            </div>
+                            <div class="swatch" style="background-color:#202000;">[ ]</div>
+                    </li>
+                </ul>
+                <li><i>Pattern text</i></li>
+                <ul>
+                    <li>
+                        <b>Pattern text</b><br />
+                            <div class="swatchText">Default:
+                                <code>#00FF00</code></div>
+                            <div class="swatch" style="background-color:#00FF00;">[ ]</div>
+                    </li>
+                    <li>
+                        <b>Highlighted pattern text</b><br />
+                            <div class="swatchText">Default:
+                                <code>#F0F000</code></div>
+                            <div class="swatch" style="background-color:#F0F000;">[ ]</div>
+                    </li>
+                    <li>
+                        <b>Highlighted pattern text 2</b><br />
+                            <div class="swatchText">Default:
+                                <code>#FFFF60</code></div>
+                            <div class="swatch" style="background-color:#FFFF60;">[ ]</div>
+                    </li>
+                    <li>
+                        <b>Instrument column</b><br />
+                            <div class="swatchText">Default:
+                                <code>#80FF80</code></div>
+                            <div class="swatch" style="background-color:#80FF80;">[ ]</div>
+                    </li>
+                    <li>
+                        <b>Volume column</b><br />
+                            <div class="swatchText">Default:
+                                <code>#8080FF</code></div>
+                            <div class="swatch" style="background-color:#8080FF;">[ ]</div>
+                    </li>
+                    <li>
+                        <b>Effect number column</b><br />
+                            <div class="swatchText">Default:
+                                <code>#FF8080</code></div>
+                            <div class="swatch" style="background-color:#FF8080;">[ ]</div>
+                    </li>
+                </ul>
+                <li><i>Cursor</i></li>
+                <ul>
+                    <li>
+                        <b>Selection</b><br />
+                            <div class="swatchText">Default:
+                                <code>#867DF2</code></div>
+                            <div class="swatch" style="background-color:#867DF2;">[ ]</div>
+                    </li>
+                    <li>
+                        <b>Cursor</b><br />
+                            <div class="swatchText">Default:
+                                <code>#808080</code></div>
+                            <div class="swatch" style="background-color:#808080;">[ ]</div>
+                    </li>
+                    <li>
+                        <b>Current row (normal mode)</b><br />
+                            <div class="swatchText">Default:
+                                <code>#3020A0</code></div>
+                            <div class="swatch" style="background-color:#3020A0;">[ ]</div>
+                    </li>
+                    <li>
+                        <b>Current row (edit mode)</b><br />
+                            <div class="swatchText">Default:
+                                <code>#802030</code></div>
+                            <div class="swatch" style="background-color:#802030;">[ ]</div>
+                    </li>
+                    <li>
+                        <b>Current row (non-follow playing)</b><br />
+                            <div class="swatchText">Default:
+                                <code>#500040</code></div>
+                            <div class="swatch" style="background-color:#500040;">[ ]</div>
+                    </li>
+                </ul>
+                <li><i>Channel headers</i></li>
+                <ul>
+                    <li>
+                        <b>Header background</b><br />
+                            <div class="swatchText">Default:
+                                    <code>#FFFFFF</code></div>
+                            <div class="swatch" style="background-color:#FFFFFF;">[ ]</div>
+                    </li>
+                    <li>
+                        <b>Header corner</b><br />
+                            <div class="swatchText">Default:
+                                    <code>#FFFFFF</code></div>
+                            <div class="swatch" style="background-color:#FFFFFF;">[ ]</div>
+                    </li>
+                    <li>
+                        <b>Header text</b><br />
+                            <div class="swatchText">Default:
+                                    <code>#000000</code></div>
+                            <div class="swatch" style="background-color:#000000;">[ ]</div>
+                    </li>
+                </ul>
             </ul>
             <p class="text">
                 Two toggle options are available:
