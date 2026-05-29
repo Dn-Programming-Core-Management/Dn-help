@@ -4,11 +4,35 @@ Change Log
 
 Written by D.P.C.M.
 
-Version 0.5.3
+Version 0.5.3.9
 
-Last updated: 2026-05-25
+Last updated: 2026-05-29
 
 ---
+
+## Unreleased - 2026-05-29
+
+### Breaking changes
+
+- ...
+
+### Important changes
+
+- ...
+
+### Improvements
+
+- Add more information on appearance configuration (@Nemo55aa #18)
+
+### Bug fixes
+
+- ...
+
+### Internal
+
+- ...
+
+
 
 ## Release 0.5.3 - 2026-05-25
 
