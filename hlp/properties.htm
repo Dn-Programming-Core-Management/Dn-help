@@ -58,19 +58,35 @@
     <p class="text">
         The Device mix offset box is used to adjust a module's
         <a href="sound_overview.htm">expansion chip</a>
-        mixing level. They are correspondingly enabled by the current expansion chips used.</p>
+        mixing level. They are correspondingly enabled by the current expansion 
+        chips used. These offsets are stored in the NSFe / NSF2
+        <a href="https://www.nesdev.org/wiki/NSFe#mixe" target="new"><code>mixe</code> chunk</a>,
+        upon export of compatible formats, for per-NSF hardware mixing.</p>
 
-        <p class="text">
+    <p class="text">
         The mixing will be adjusted in combination with the
         <a href="config_mixer.htm">global hardware mixing levels</a>, if 
         Hardware-based mixing is disabled.</p>
 
     <p class="text">
         The Hardware-based mixing checkbox toggles between default mixing
-        (legacy mixing), and hardware-based device mixing, whose measurements 
-        are based on the
+        (legacy), and survey-based calibrated hardware mixing, whose 
+        measurements are based on the
         <a href="https://forums.nesdev.org/viewtopic.php?t=17741">Brad Smith's
         expansion audio mixing survey</a>.</p>
+
+    <p class="text">Dn-FamiTracker's hardware-based mixing are calibrated based
+        on NSFPlay's <code>mixe</code> chunk constants (in millibels):</p>
+    <ul class="text">
+        <li><b>2A03 APU1</b>: 0 (reference)</li>
+        <li><b>2A03 APU2</b>: -20</li>
+        <li><b>VRC6</b>: 0</li>
+        <li><b>VRC7</b>: 1340</li>
+        <li><b>FDS</b>: 690</li>
+        <li><b>MMC5</b>: 0</li>
+        <li><b>N163</b>: 1540</li>
+        <li><b>S5B</b>: -250</li>
+    </ul>
 
     <p class="text">
         Note that the
@@ -83,9 +99,14 @@
         <img id="IMG6" src="img/opll_settings.png" alt="Screenshot of OPLL settings section"></p>
 
     <p class="text">
-        The OPLL settings box is used to modify a module's current OPLL patch set when
-        VRC7 expansion audio and the "Use external OPLL" checkbox is selected. This is intended
-        for modules which use an external OPLL in place of VRC7 registers, such as TNS-HFC.</p>
+        The OPLL settings box is used to modify a module's current OPLL patch 
+        set when VRC7 expansion audio and the "Use external OPLL" checkbox is 
+        selected. This is intended for modules which use an external OPLL in 
+        place of VRC7 registers, such as TNS-HFC.</p>
+
+    <p class="text">
+        These settings are stored in the NSFe / NSF2
+        <a href="https://www.nesdev.org/wiki/NSFe#VRC7"><code>VRC7</code> chunk</a> upon export of compatible formats.</p>
 
 <h2 class="bold">Vibrato settings</h2>
 
