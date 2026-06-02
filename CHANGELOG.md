@@ -23,6 +23,7 @@ Last updated: 2026-05-29
 ### Improvements
 
 - Add more information on appearance configuration (@Nemo55aa #18)
+- Clarify detail about module mixer and configuration settings (@Gumball2415 #19)
 
 ### Bug fixes
 
