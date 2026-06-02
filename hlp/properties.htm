@@ -59,12 +59,23 @@
         The Device mix offset box is used to adjust a module's
         <a href="sound_overview.htm">expansion chip</a>
         mixing level. They are correspondingly enabled by the current expansion chips used.</p>
-    
-    
+
+        <p class="text">
+        The mixing will be adjusted in combination with the
+        <a href="config_mixer.htm">global hardware mixing levels</a>, if 
+        Hardware-based mixing is disabled.</p>
+
     <p class="text">
-        The Hardware-based mixing checkbox toggles between legacy expansion mixing, and
-        hardware-based expansion mixing, whose measurements are based on the
-        <a href="https://forums.nesdev.org/viewtopic.php?t=17741">audio mixing survey</a>.</p>
+        The Hardware-based mixing checkbox toggles between default mixing
+        (legacy mixing), and hardware-based device mixing, whose measurements 
+        are based on the
+        <a href="https://forums.nesdev.org/viewtopic.php?t=17741">Brad Smith's
+        expansion audio mixing survey</a>.</p>
+
+    <p class="text">
+        Note that the
+        <a href="config_mixer.htm">global hardware mix configuration</a>
+        will be ignored when hardware-based mixing is enabled.</p>
 
 <h2 class="bold">OPLL settings</h2>
 
