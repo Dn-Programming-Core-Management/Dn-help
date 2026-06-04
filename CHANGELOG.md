@@ -24,6 +24,8 @@ Last updated: 2026-05-29
 
 - Add more information on appearance configuration (@Nemo55aa #18)
 - Clarify detail about module mixer and configuration settings (@Gumball2415 #19)
+- Add default color for "volume color 2" (@eulyderg #284 @Nemo55aa #419)
+- Add more info of volume column's fading color feature and "volume color 2" (@eulyderg #284 @Nemo55aa #419)
 
 ### Bug fixes
 
